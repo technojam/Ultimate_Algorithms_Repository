@@ -10,9 +10,15 @@ https://practice.geeksforgeeks.org/home/
 # Intermediate
 
    1.https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
+
    2.https://practice.geeksforgeeks.org/problems/count-the-triplets/0
+   
    3.https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0  (imp.)
+   
    4.https://practice.geeksforgeeks.org/problems/inversion-of-array/0/
+   
    5.https://practice.geeksforgeeks.org/problems/reverse-array-in-groups/0
+   
    6.https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/
+   
   
