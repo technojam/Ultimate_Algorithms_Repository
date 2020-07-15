@@ -1,8 +1,8 @@
-#BASICS
+# BASICS
 
   https://practice.geeksforgeeks.org/home/
   
-##FREQUENTLY ASKED QUESTIONS
+## FREQUENTLY ASKED QUESTIONS
  
   1. Addition of two matrix .
   2. Multiplication of two matrix .
