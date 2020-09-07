@@ -30,12 +30,19 @@ int main()
     printf("Enter the number of numbers ");
     scanf("%d",&n);
     
-    printf("Enter all the elements\n");
-    for(int i=0;i<n;i++)
+    if(n>arr.size)
     {
-        scanf("%d",&arr.A[i]);
+        printf("The number of elements cannot be more than the Array size");
     }
-    arr.length=n;
-    
-    Display (arr);
+    else
+    {
+        printf("Enter all the elements\n");
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&arr.A[i]);
+        }
+        arr.length=n;
+        
+        Display (arr);
+    }
 }
