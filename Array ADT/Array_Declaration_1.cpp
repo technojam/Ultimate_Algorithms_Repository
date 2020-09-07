@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-struct Array
+struct Array                     //structure Array Definition
 {
     int *A;
     int size;
     int length;
 };
 
-void Display(struct Array arr)
+void Display(struct Array arr)          // Display() displays the elements in the array
 {
     printf("\nElements are:-\n\n");
     for(int i=0;i<arr.length;i++)
@@ -24,7 +24,7 @@ int main()
     printf("Enter the size of the array ");
     scanf("%d",&arr.size);
     
-    arr.A= (int *)malloc(arr.size*sizeof(int));
+    arr.A= (int *)malloc(arr.size*sizeof(int));    //Dynamic Memory allocation of array "arr.A"
     arr.length=0;
     
     printf("Enter the number of numbers ");
@@ -36,7 +36,7 @@ int main()
     }
     else
     {
-        printf("Enter all the elements\n");
+        printf("Enter all the elements\n");     //Dynamic Initialization of array
         for(int i=0;i<n;i++)
         {
             scanf("%d",&arr.A[i]);
