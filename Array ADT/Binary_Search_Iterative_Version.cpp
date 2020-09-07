@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-struct Array
+struct Array                      //structure Array Definition
 {
     int A[10];
     int size;
     int length;
 };
 
-void Display(struct Array arr,int length)
+void Display(struct Array arr,int length)          // Display() displays the elements in the array
 {
     for(int i=0;i<length;i++)
     {
@@ -16,7 +16,7 @@ void Display(struct Array arr,int length)
     printf("\n");
 }
 
-int BinarySearch(struct Array arr,int l,int h,int key)
+int BinarySearch(struct Array arr,int l,int h,int key)   //BinarySearch() implements Binary search using loop (Iteration)
 {
    while(l<=h)
    {
@@ -40,7 +40,7 @@ int BinarySearch(struct Array arr,int l,int h,int key)
 
 int main()
 {
-    struct Array arr = {{2,3,4,5,6},10,5};
+    struct Array arr = {{2,3,4,5,6},10,5};         //Static Initialization of Array "arr"
     Display(arr,arr.length);
     printf("%d\n",BinarySearch(arr,0,arr.length-1,3));
 }
