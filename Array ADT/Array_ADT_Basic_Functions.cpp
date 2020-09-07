@@ -1,12 +1,12 @@
 #include<stdio.h>
-struct Array
+struct Array                      //structure Array Definition
 {
     int A[10];
     int length;
     int size;
 };
 
-void Display(struct Array arr)
+void Display(struct Array arr)          // Display() displays the elements in the array
 {
     printf("\n");
     for(int i=0;i<arr.length;i++)
@@ -15,14 +15,14 @@ void Display(struct Array arr)
     }
 }
 
-int Get(struct Array arr,int index)
+int Get(struct Array arr,int index)     // Get() returns the element at Index "index"
 {
     if(index>=0 && index<arr.length)
         return arr.A[index];
     return -1;
 }
 
-void Set(struct Array *arr,int index, int x)
+void Set(struct Array *arr,int index, int x)          // Set() Sets the element at Index "index"
 {
      if(index>=0 && index<arr->length)
      {
@@ -30,7 +30,7 @@ void Set(struct Array *arr,int index, int x)
      }
 }
 
-int Max(struct Array arr)
+int Max(struct Array arr)                    // Max() returns the largest number in the array
 {
     int max=arr.A[0];
     for(int i=1;i<arr.length;i++)
@@ -41,7 +41,7 @@ int Max(struct Array arr)
     return max;
 }
 
-int Min(struct Array arr)
+int Min(struct Array arr)                     //Min() returns the smallest number in the array
 {
     int min=arr.A[0];
     for(int i=1;i<arr.length;i++)
@@ -52,7 +52,7 @@ int Min(struct Array arr)
     return min;
 }
 
-int Sum(struct Array arr)
+int Sum(struct Array arr)                      //Sum() returns the sum of all the numbers in the array
 {
     int Total=0;
     for(int i=0;i<arr.length;i++)
@@ -60,7 +60,7 @@ int Sum(struct Array arr)
     return Total;
 }
 
-float Avg(struct Array arr)
+float Avg(struct Array arr)                    //Avg() returns the average of all the numbers in the array
 {
     float sum = (float)Sum(arr);
     return (float)sum/arr.length;
@@ -68,7 +68,7 @@ float Avg(struct Array arr)
 
 int main()
 {
-    struct Array arr = {{2,3,4,5,6},5,10};
+    struct Array arr = {{2,3,4,5,6},5,10};         //Static Initialization of Array "arr"
     Display(arr);
     printf("\n%d",Get(arr,2));
     Set(&arr,2,800);
