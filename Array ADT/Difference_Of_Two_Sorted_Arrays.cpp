@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct Array
+struct Array                      //structure Array Definition
 {
     int A[20];
     int length;
     int size;
 };
 
-void Display(struct Array arr)
+void Display(struct Array arr)          // Display() displays the elements in the array
 {
     for(int i=0;i<arr.length;i++)
     {
@@ -17,7 +17,7 @@ void Display(struct Array arr)
     printf("\n");
 }
 
-struct Array * DifferenceSorted(struct Array *arr1, struct Array *arr2)
+struct Array * DifferenceSorted(struct Array *arr1, struct Array *arr2)       //DifferenceSorted() gives the difference between sorted arrays arr1 and arr2 (arr1 - arr2)
 {
     struct Array * arr3 = (struct Array *)malloc(sizeof(struct Array));
     int i,j,k;
@@ -56,7 +56,7 @@ int main()
     printf("arr2 : ");
     Display(arr2);
     struct Array *arr3;
-    arr3=DifferenceSorted(&arr1,&arr2);
+    arr3=DifferenceSorted(&arr1,&arr2);                           //calling by reference
     printf("difference between arr1 and arr2 (arr1 - arr2) : ");
     Display(*arr3);
 }
