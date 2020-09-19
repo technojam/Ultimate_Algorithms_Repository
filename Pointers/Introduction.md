@@ -9,3 +9,5 @@ The pointer in C++ language is a variable, it is a locator or indicator that poi
 
 datatype *var_name; 
 int *ptr;   //ptr can point to an address which holds int data
+
+##
