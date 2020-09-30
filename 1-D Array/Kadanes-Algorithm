@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+
+int maxSubArraySum(int *a, int length) { 
+    int maxatpoint=0;
+    int maxtillpoint=INT_MIN; //because we don't want to introduce error by assuming a high value of maxtillpoint than the array allows for
+    for (int i = 0; i < length; i++) { 
+        maxatpoint = maxatpoint + a[i]; //tries to find max starting point
+        if (maxtillpoint < maxatpoint) //another element can be added
+            maxtillpoint = maxatpoint; 
+  
+        if (maxatpoint < 0) //starts going negative
+            maxatpoint = 0; 
+    } 
+    return maxtillpoint; 
+} 
+  
+int main() { 
+    int length;
+    scanf("%d", &length);
+    int arr[length];
+    for(int i=0; i<length; i++)
+        scanf("%d", &arr[i]);
+    printf("Max Continuous Sum is %d", maxSubArraySum(arr, length));
+    return 0; 
+} 
