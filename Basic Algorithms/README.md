@@ -1,3 +1,8 @@
 # Basic Algorithms for Beginners
 
-1. First Algorithum To begin with is Sorting Algorithum.
+### Sorting Algorithum :
+ 1. Bubble Sort
+ 2. Insertion Sort
+ 3. Selection Sort
+ 
+ ##### These 3 sort are most basics algorithum to begin with Sorting Algorithum.
