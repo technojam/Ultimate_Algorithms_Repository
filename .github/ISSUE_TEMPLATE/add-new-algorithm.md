@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Title or Name of the Algorithm **
+**Title or Name of the Algorithm**
 * enter name of the algorithm here
 
 **Describe the algorithm**
