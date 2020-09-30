@@ -16,32 +16,34 @@
 ## ROADMAP
   1. 1-D Arrays
   2. 2-D Arrays
-  3. Character Arrays
-  4. Strings
-  5. Pointers
-  6. Dynamic Memory Allocation
-  7. STL - ALGO'S
-  8. Sorting Algorithms
-  8. BINARY SEARCH
-  9. Vectors
-  10. Bit Manipulation
-  11. Number Theory
-  12. Recursion
-  13. Backtracking
-  14. Space and Time Complexities
-  15. OOP'S
-  16. Linked List
-  17. Stacks
-  18. Queues
-  19. Deque
-  20. Binary Tree
-  21. Binary Search Tree
-  22. Heaps
-  23. Hashing
-  24. Greedy Algorithm's
-  25. Dynamic Programming
-  26. Graph
-  27. Segment Tree/Fenwick Tree
+  3. Array ADT
+  4. Character Arrays
+  5. Strings
+  6. Pointers
+  7. Dynamic Memory Allocation
+  8. STL - ALGO'S
+  9. Sorting Algorithms
+  10. BINARY SEARCH
+  11. Vectors
+  12. Bit Manipulation
+  13. Number Theory
+  14. Recursion
+  15. Backtracking
+  16. Space and Time Complexities
+  17. OOP'S
+  18. Linked List
+  19. Stacks
+  20. Queues
+  21. Deque
+  22. Binary Tree
+  23. Binary Search Tree
+  24. Heaps
+  25. Hashing
+  26. Greedy Algorithms
+  27. Dynamic Programming
+  28. Graph
+  29. Segment Tree/Fenwick Tree
+
 
   # Contributing
 
