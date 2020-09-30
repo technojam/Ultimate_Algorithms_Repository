@@ -45,5 +45,5 @@
   27. Dynamic Programming
   28. Graph
   29. Segment Tree/Fenwick Tree
-  
+  30. Check if a no is a Perfect Square
 
