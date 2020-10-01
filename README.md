@@ -1,5 +1,5 @@
 # DATA STRUCTURE AND ALGORITHMS(C++)
-
+<p><img src="https://1.bp.blogspot.com/-0LtqIuGH450/X3Yx28bl55I/AAAAAAAAFv8/wZgBiOc5jl4whCS56VLP1Bwx3sUvEK-OgCLcBGAsYHQ/s1200/My%2BPost%2B%25289%2529.jpg"> </p>
 ## DISCLAMER
    1. Knowing a programming language and DSA are two different things .
 
