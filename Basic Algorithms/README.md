@@ -6,5 +6,5 @@
 - Kadane's Algorithm
 - Longest Common Subsequence 
 
-## Prime Number Search
+### Prime Number Search
 - Sieve of Eratosthenes 
