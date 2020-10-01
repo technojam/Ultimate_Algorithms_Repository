@@ -2,7 +2,7 @@
 using namespace std;
 
 // CPP CODE FOR BREADTH FIRST SEARCH ON UNDIRECTED GRAPH
-// TIME COMPLEXITY : O(N)
+// TIME COMPLEXITY : O(N)  , where N is the number of nodes
 // SPACE COMPLEXITY : O(M) , where M is the number of edges
 const int MAXN=100005, inf = 1000000007;
 vector<int> graph[MAXN];
@@ -42,7 +42,7 @@ void input()
 
 int main()
 {
-    memset(visited, false, sizeof(visited));
+    memset(dis, inf, sizeof(dis));
     input();
     bfs(src);
     return 0;
