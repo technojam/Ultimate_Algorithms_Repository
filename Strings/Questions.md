@@ -15,7 +15,7 @@
  9. Minimum characters needed to be inserted in the beginning to make it palindromic.
 10. Check for Anagrams 
 11. Count and Say 
-12.Compare version numbers 
+12. Compare version numbers 
 
   
   
