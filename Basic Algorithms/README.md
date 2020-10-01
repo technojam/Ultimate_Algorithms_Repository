@@ -4,3 +4,4 @@
 
 ### Dynamic Programming
 - Kadane's Algorithm
+- Longest Common Subsequence 
