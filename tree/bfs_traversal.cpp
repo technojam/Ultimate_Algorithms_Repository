@@ -8,7 +8,7 @@ int max(int a,int b){
 }
 
 int height_calculate(Node* root){
-  if (root==nullptr)
+  if (root==NULL)
   return 0;
   else{
     height_calculate(root->left_child);
@@ -25,7 +25,7 @@ void bfs_control_loop(Node* root){
 }
 
 void bfs_traversal(Node* root,int level){
-  if (root==nullptr)
+  if (root==NULL)
   return;
   if (level==1)
   std::cout << root->data <<"->";

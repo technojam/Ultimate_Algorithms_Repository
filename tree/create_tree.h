@@ -12,3 +12,4 @@ public:
   static void add_node(Node* root,int data);
 
 };
+
