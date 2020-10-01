@@ -4,3 +4,6 @@
 
 ### Dynamic Programming
 - Kadane's Algorithm
+
+### Array Rotation
+- Juggling Algorithm
