@@ -1,0 +1,52 @@
+/*
+	GCD stands for greatest common divisor.
+	Here we're using Euclidean algorithm to find GCD.
+	This alorithm states that GCD(a,b) = GCD(b%a,a)
+	So we created a function that calls another recursive function
+	which works as the same.
+	inside findGCD(int num1, int num2) we keep on calling findGCD(num2%num1,num1)
+	until we have num1 as 0
+	as soon as we get 0 in num1 we're returning num2
+	
+	Time complexity = O(log x)  where x = min(num1,num2) 
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class GCD {
+	int num1;
+	int num2;
+	public :
+		
+		void inputNumbers(int num1, int num2) {
+			this->num1 = num1;
+			this->num2 = num2;
+		}
+		
+		int findGCD(int num1=1, int num2=1) { //considring default value as 1
+			if(num1==0)
+				return num2;
+			return findGCD(num2%num1,num1);
+		}
+		
+		int Solution() {
+			return findGCD(this->num1,this->num2);
+		}
+};
+
+int main() {
+	
+	//Taking input
+	int num1,num2;
+	cout<<"Enter the first number : ";
+	cin>>num1;
+	cout<<"Enter the second number : ";
+	cin>>num2;
+	
+	GCD gcd1;
+	gcd1.inputNumbers(num1,num2);
+	cout<<"GCD = "<<gcd1.Solution()<<endl;
+	
+	return 0;
+} 
