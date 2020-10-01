@@ -12,7 +12,7 @@
   
   If you love to solve the real-world complex problems.
   
-## WHY C++ ?
+## WHY C++ is best  ?
   C++ is by far the the most popular language of choice for competitive programmers across the world as it is usually faster than Java and Python, and most of the resources are available in C++. C++ also has a vast library called STL(Standard Template Library) which makes life a lot easier for competitive coders.
     
 ## ROADMAP
