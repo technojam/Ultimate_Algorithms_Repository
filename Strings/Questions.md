@@ -11,11 +11,11 @@
  5. Longest Common Prefix 
  6. Rabin Karp
  7. Prefix Function/Z-Function
- 8. KMP algo 
- 9. Minimum characters needed to be inserted in the beginning to make it palindromic. 
- 10.Check for Anagrams 
- 11.Count and Say 
- 12.Compare version numbers 
+ 8. KMP algo
+ 9. Minimum characters needed to be inserted in the beginning to make it palindromic.
+10. Check for Anagrams 
+11. Count and Say 
+12.Compare version numbers 
 
   
   
