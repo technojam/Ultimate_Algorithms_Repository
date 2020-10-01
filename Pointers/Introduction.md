@@ -22,7 +22,7 @@ int* ptr;
 ptr= & num;
 
 method 2:
-int* ptr= &num;
+int* ptr= & num;
 
 
 ## Printing Values
