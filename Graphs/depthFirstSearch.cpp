@@ -4,8 +4,9 @@ using namespace std;
 // CPP CODE FOR DEPTH FIRST SEARCH ON UNDIRECTED GRAPH
 // TIME COMPLEXITY : O(N)
 // SPACE COMPLEXITY : O(N^2) , where N is the number of nodes
-vector<int> graph[10001];
-bool visited[10001];
+const int MAXN=100005
+vector<int> graph[MAXN];
+bool visited[MAXN];
 int nodes;
 
 void dfs(int node)
@@ -16,6 +17,14 @@ void dfs(int node)
         if (!visited[child])
         {
             dfs(child);
+        }
+    }
+}
+
+void dfs_util(){
+    for(int i=1;i<=nodes;++i){
+        if(!visited[i]){
+            dfs(i);   
         }
     }
 }
@@ -42,6 +51,6 @@ int main()
 {
     memset(visited, false, sizeof(visited));
     input();
-    dfs(1);
+    dfs_util();
     return 0;
 }
