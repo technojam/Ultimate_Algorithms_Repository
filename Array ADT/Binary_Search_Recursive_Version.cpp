@@ -21,7 +21,7 @@ int BinarySearch(int A[],int l,int h,int key)       //BinarySearch() implements 
     int mid;
    while(l<=h)
    {
-       mid=(l+h)/2;
+       mid= l+(h-l)/2;
        if(key==A[mid])
        {
            return mid;
