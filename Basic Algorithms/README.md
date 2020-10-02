@@ -8,4 +8,7 @@
 - Longest Common Subsequence 
 
 ### Prime Number Search
-- Sieve of Eratosthenes 
+- Sieve of Eratosthenes
+
+### Bit Manipulation
+- Brian Kernighan's algorithm 
