@@ -3,7 +3,7 @@
 ## DISCLAMER
    1. Knowing a programming language and DSA are two different things .
 
-      eg. you might be knowing python , c, c++ , java etc but if you know DSA then you can implement them in any programming language with minor syntatic modifications .
+      eg. you might be knowing python , c, c++ , java etc but if you know DSA then you can implement them in any programming language with minor syntatic modifications.
 
    2. This Repository does not intend to spoon feed , it can be used for studying in the right direction , but the efforts should be solely yours .
 
