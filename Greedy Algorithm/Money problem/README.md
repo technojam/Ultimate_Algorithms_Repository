@@ -13,9 +13,18 @@ Example-
     Output : 3
 
 ## Algorithm
+<<<<<<< HEAD
 - Input: sum,
 - Initialise the coins = 0
 - Step 1: Find the largest denomination that can be used i.e. smaller than sum.
 - Step 2: Add denomination two coins and subtract it from the Sum
 - Step 3: Repeat step 2 until the sum becomes 0.
 - Step 4: Print each value in coins.
+=======
+Input: sum, </br>
+Initialise the coins = 0 </br>
+Step 1: Find the largest denomination that can be used i.e. smaller than sum. </br>
+Step 2: Add denomination two coins and subtract it from the Sum </br>
+Step 3: Repeat step 2 until the sum becomes 0. </br>
+Step 4: Print each value in coins. </br>
+>>>>>>> 965dd3ffa643e2b3d4cdab3511a1a889ec0f97ac
