@@ -1,3 +1,18 @@
+/*Take a variable currSum.
+Make the sum of the entire array considering all zeroes as -1 and 1 as 1.
+Simultaneously keep updating the value of hashmap as you traverse through the array.
+Now traverse through the hashmap and look if any value of currSum appears more than once.
+Why do we do this?
+Imagine an array like this: [1, 0, 0, 1, 0, 1, 1]
+Making all zeroes as -1.
+[1, -1, -1, 1, -1, 1, 1]
+Now the hashmap would have values such as this:
+-1 --- 2
+0 --- 3
+1 --- 2
+Now as if we encounter the same sum more than twice, that means the value of the subarray between the two indices is zero. So we add that to our answer.
+Finally add the hashmap value of 0 to our answer as the subarray with zero-sum also need to be counted.*/
+
 #include <bits/stdc++.h> 
 using namespace std; 
   
