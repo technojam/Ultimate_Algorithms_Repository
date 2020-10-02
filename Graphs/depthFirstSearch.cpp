@@ -2,11 +2,11 @@
 using namespace std;
 
 // CPP CODE FOR DEPTH FIRST SEARCH ON UNDIRECTED GRAPH
-// TIME COMPLEXITY : O(N)
-// SPACE COMPLEXITY : O(N^2) , where N is the number of nodes
+// TIME COMPLEXITY : O(N)  , where N is the number of nodes
+// SPACE COMPLEXITY : O(M) , where M is the number of edges
 vector<int> graph[10001];
 bool visited[10001];
-int nodes;
+int nodes, edges;
 
 void dfs(int node)
 {
@@ -20,21 +20,23 @@ void dfs(int node)
     }
 }
 
+void dfs_util(){
+    for(int i=1;i<=nodes;++i){
+        if(!visited[i]){
+            dfs(i);   
+        }
+    }
+}
+
 void input()
 {
-    cin >> nodes;
-    int curr;
-    //taking input as an adjacency matrix and converting it into an adjacency list
-    for (int i = 1; i <= nodes; i++)
-    {
-        for (int j = 1; j <= nodes; j++)
-        {
-            cin >> curr;
-            if (curr)
-            {
-                graph[i].push_back(j);
-            }
-        }
+    cin >> nodes >> edges;
+    int u , v;
+    //taking input as an adjacency list
+    for(int i=0; i<edges; ++i){
+        cin >> u >> v;
+        graph[u].push_back(v);
+        graph[v].push_back(u);
     }
 }
 
@@ -42,6 +44,6 @@ int main()
 {
     memset(visited, false, sizeof(visited));
     input();
-    dfs(1);
+    dfs_util();
     return 0;
 }
