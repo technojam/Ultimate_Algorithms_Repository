@@ -2,6 +2,7 @@
 ### Sorting Algorithm
 - Kahn's Algorithm
 - Counting sort
+- Merge sort
 
 ### Dynamic Programming
 - Kadane's Algorithm
