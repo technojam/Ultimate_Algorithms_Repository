@@ -5,11 +5,15 @@ int countSubarrWithEqualZeroAndOne(int arr[], int n){
   map<int,int> mp; 
   int currSum=0; 
   int count=0; 
-  for (int i = 0; i < n; i++) { 
+   for (int i = 0; i < n; i++) { 
+            //Replacing 0's in array with -1 
             if (arr[i] == 0) 
                 arr[i] = -1; 
   
-            currSum+= arr[i];
+            currSum+= arr[i]; 
+  
+            //If sum = 0, it implies number of 0's and 1's are 
+            //equal from arr[0]..arr[i] 
             if (currSum == 0) 
                 count++; 
   
