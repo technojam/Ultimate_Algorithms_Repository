@@ -1,0 +1,38 @@
+// DP - EggDropping Tabulation
+#include<bits/stdc++.h>
+#include<algorithm>
+#include<stdlib.h>
+#include<iostream>
+using namespace std;
+
+ int static dp[101][1001];
+ int EggDrop(int egg,int floor)
+ {
+    int dp[egg+1][floor+1];
+    for(int i=1;i<egg+1;i++){
+        dp[i][1]=1;
+        dp[i][0]=0;
+    }
+    for(int j=1;j<floor+1;j++)
+        dp[1][j]=j;
+
+  for(int i=2;i<egg+1;i++){
+    for(int j=2;j<floor+1;j++){
+            dp[i][j]=INT_MAX; 
+      for(int k=1;k<j+1;k++)
+        {
+         int tempans=1+max(dp[i-1][k-1],dp[i][j-k]);
+         dp[i][j]=min(dp[i][j],tempans);
+        }
+    }
+  }
+  return dp[egg][floor];
+ }
+int main()
+{
+    int egg,floor;
+    cout<<"Total no of eggs and floor : ";
+    cin>>egg>>floor;
+    cout<<"\n Minimum no of attempts in worst case to find critical floor : "<<EggDrop(egg,floor)<<endl;
+    return 0;
+}
