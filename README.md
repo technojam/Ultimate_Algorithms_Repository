@@ -58,6 +58,8 @@
   2. Discuss all the features and requirements in issue section before sending an PR.
   3. It would be really appreciated if you try to look into previous created issue instead of a new one.
   4. Use proper template and be describe all the changes that you are addressing in a PR.
+  5. Add relevant comments explaining what the code is all about (if possible write the Time and Space complexities)
+  6. Any type pf plagrised code or fishy code will not be merged.
   5. Once you follow above points and your PR gets approved by more than 2 reviewers it will be merged by the maintainers.
 
   ## Code of Conduct
@@ -92,37 +94,11 @@
     address, without explicit permission
   * Other conduct which could reasonably be considered inappropriate in a
     professional setting
+    
+   ## Contact Info
+   
+   Feel free to contact us to discuss any issues, questions, or comments.
+   Our contact info can be found on our [GitHub page](https://github.com/technojam).
 
-  ### Our Responsibilities
-
-  Project maintainers are responsible for clarifying the standards of acceptable
-  behavior and are expected to take appropriate and fair corrective action in
-  response to any instances of unacceptable behavior.
-
-  Project maintainers have the right and responsibility to remove, edit, or
-  reject comments, commits, code, wiki edits, issues, and other contributions
-  that are not aligned to this Code of Conduct, or to ban temporarily or
-  permanently any contributor for other behaviors that they deem inappropriate,
-  threatening, offensive, or harmful.
-
-  ### Scope
-
-  This Code of Conduct applies both within project spaces and in public spaces
-  when an individual is representing the project or its community. Examples of
-  representing a project or community include using an official project e-mail
-  address, posting via an official social media account, or acting as an appointed
-  representative at an online or offline event. Representation of a project may be
-  further defined and clarified by project maintainers.
-
-  ### Enforcement
-
-  Instances of abusive, harassing, or otherwise unacceptable behavior may be
-  reported by contacting the project team at [jainn7194@gmail.com] . All
-  complaints will be reviewed and investigated and will result in a response that
-  is deemed necessary and appropriate to the circumstances. The project team is
-  obligated to maintain confidentiality with regard to the reporter of an incident.
-  Further details of specific enforcement policies may be posted separately.
-
-  Project maintainers who do not follow or enforce the Code of Conduct in good
-  faith may face temporary or permanent repercussions as determined by other
-  members of the project's leadership.
+ 
+ 
