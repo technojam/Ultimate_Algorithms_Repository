@@ -12,29 +12,13 @@
 */
 
 #include<bits/stdc++.h>
-using namespace std;
-
-class GCD {
-	int num1;
-	int num2;
-	public :
+using namespace std;		
+int findGCD(int num1=1, int num2=1) { //considring default value as 1
+	if(num1==0)
+		return num2;
+	return findGCD(num2%num1,num1);
+}
 		
-		void inputNumbers(int num1, int num2) {
-			this->num1 = num1;
-			this->num2 = num2;
-		}
-		
-		int findGCD(int num1=1, int num2=1) { //considring default value as 1
-			if(num1==0)
-				return num2;
-			return findGCD(num2%num1,num1);
-		}
-		
-		int Solution() {
-			return findGCD(this->num1,this->num2);
-		}
-};
-
 int main() {
 	
 	//Taking input
@@ -44,9 +28,7 @@ int main() {
 	cout<<"Enter the second number : ";
 	cin>>num2;
 	
-	GCD gcd1;
-	gcd1.inputNumbers(num1,num2);
-	cout<<"GCD = "<<gcd1.Solution()<<endl;
+	cout<<"GCD = "<<findGCD(num1,num2)<<endl;
 	
 	return 0;
 } 
