@@ -2,8 +2,8 @@
 using namespace std;
 #include<iostream>
 
-    #define loopi for(int i = 0 ; i < n ; i++)
-    #define loopj for(int j = 0 ; j < n ; j++)
+    #define loopi 
+    #define loopj 
     #define n 8
     
     int isSafe(int x , int y , int sol[n][n]) {
@@ -39,7 +39,9 @@ using namespace std;
 
         int sol[n][n];
         
-        loopi loopj sol[i][j] = -1; 
+        for(int i = 0 ; i < n ; i++) 
+			for(int j = 0 ; j < n ; j++)
+				sol[i][j] = -1; 
 
         int xMove[8] = { 2 , 1 , -1 , -2 , -2 , -1 , 1, 2};
         int yMove[8] = { 1 , 2 , 2 , 1 , -1 , -2 , -2, -1};
@@ -49,9 +51,10 @@ using namespace std;
         if(solution(sol , 0 , 0 , 1 , xMove , yMove) == 0)
             cout<<"\nSolution doest not exists";
         else
-            loopi { 
+            for(int i = 0 ; i < n ; i++) { 
             
-            loopj printf(" %2d ",sol[i][j]);
+            for(int j = 0 ; j < n ; j++) 
+				printf(" %2d ",sol[i][j]);
             cout<<endl;
 
             }
