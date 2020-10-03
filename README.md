@@ -3,7 +3,7 @@
 ## DISCLAMER
    1. Knowing a programming language and DSA are two different things .
 
-      eg. you might be knowing python , c, c++ , java etc but if you know DSA then you can implement them in any programming language with minor syntatic modifications .
+      eg. you might be knowing python , c, c++ , java etc but if you know DSA then you can implement them in any programming language with minor syntatic modifications.
 
    2. This Repository does not intend to spoon feed , it can be used for studying in the right direction , but the efforts should be solely yours .
 
@@ -54,14 +54,11 @@
 
   ## Pull Request Process
 
-  1. Ensure any install or build dependencies are removed before the end of the layer when doing a
-     build.
-  2. Update the README.md with details of changes to the interface, this includes new environment
-     variables, exposed ports, useful file locations and container parameters.
-  3. Increase the version numbers in any examples files and the README.md to the new version that this
-     Pull Request would represent.
-  4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you
-     do not have permission to do that, you may request the second reviewer to merge it for you.
+  1. Ensure that every PR is linked with an issue, all standalone PRs will be rejected by the maintainers.
+  2. Discuss all the features and requirements in issue section before sending an PR.
+  3. It would be really appreciated if you try to look into previous created issue instead of a new one.
+  4. Use proper template and be describe all the changes that you are addressing in a PR.
+  5. Once you follow above points and your PR gets approved by more than 2 reviewers it will be merged by the maintainers.
 
   ## Code of Conduct
 
