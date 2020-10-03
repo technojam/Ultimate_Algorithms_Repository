@@ -1,14 +1,14 @@
 ---
-name: Add New Algorithm
-about: Add a new algorithm for this repository
-title: "[NEW Algorithm]"
+name: Kadane's algorithm 
+about: Kadane's algorithm for maximum subarray sum
+title: "[Kadane's algorithm]"
 labels: hacktoberfest
-assignees: ''
+assignees: 'zahinekbal'
 
 ---
 
 **Title or Name of the Algorithm**
-* enter name of the algorithm here
+* Kadane's algorithm 
 
 **Describe the algorithm**
-A brief description of what your algorithm does
+Kadane's algorithm is a Dynamic Programming approach to solve “the largest contiguous elements in an array” with runtime of O(n)
