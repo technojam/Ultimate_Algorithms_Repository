@@ -1,29 +1,41 @@
-#include <bits/stdc++.h>
-#define int long long
-#define INF 1000000000000000000
-#define MOD 1000000009;
-#define mid(l, u) ((l+u)/2)
-#define rchild(i) (i*2 + 2)
-#define lchild(i) (i*2 + 1)
-using namespace std;
+//KADANE'S algorithm is able to find the MaximumSum of a Contiguous Subarray in array with the runtime of O(n)...
 
-signed main(){
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
     int n;
     cin>>n;
-    int a[n];
-    for(int i =0 ;i<n;i++) cin>>a[i];
-    int dp[n];
-    dp[0] = a[0];
-    int ans = a[0];
-    for(int i =1;i<n;i++) ans = max(ans, (dp[i] = a[i] + max(dp[i-1], (int)0)));
-    cout<<ans<<endl;
-} 
+    int a[1000], cs=0, ms=0;
+    for(int i=0, i < n, i++){
+        cin>>a[i];
+    }
+    //Kadane's algorithm for Subarray Sum
+    for(int i=0; i<n; i++){
+        cs = cs + a[i];
+        if(cs<0){
+            cs = 0;
+        }
+        ms = max(cs,ms);
+    }
+    cout<<"Maximum is"<<ms<<endl;
+    return 0;
+}
 
-/*
-Sample Input:
-8
--2 -3 4 -1 -2 1 5 -3
+example 1:-
+INPUT:-
 
-Sample Output:
-7
-*/
+9
+-4  1  3  -2  6  2  -8  -9  4
+
+OUTPUT:-
+
+Maximum is 10
+
+Example 2:-
+INput:-
+
+9
+
+-4  1  3  -2  16  2  -8  -9  4
+
+Maximum is 20
