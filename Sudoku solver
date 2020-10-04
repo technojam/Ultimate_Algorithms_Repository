@@ -1,0 +1,45 @@
+class Solution {
+public:
+    bool safe(vector<vector<char>> v,char n,int r,int c){
+        for(int i=0;i<9;i++){
+            if(v[i][c]==n || v[r][i]==n)
+                return false;
+            
+        }
+        
+        int a=r-r%3;
+            int b=c-c%3;
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                if(v[i+a][j+b]==n)
+                    return false;
+            }
+        }
+        return true;
+    }
+    bool fn(vector<vector<char>> &v,int r,int c){
+        if(r==8 && c==9)
+            return true;
+        if(c==9)
+        {
+            c=0;
+            r++;
+        }
+        
+        if(v[r][c]!='.')
+            return fn(v,r,c+1);
+        for(int i=1;i<=9;i++){
+            if(safe(v,'0'+i,r,c)){
+            v[r][c]='0'+i;
+                if(fn(v,r,c+1))
+                    return true;
+                v[r][c]='.';
+            } 
+        }
+        return false;
+    }
+    void solveSudoku(vector<vector<char>>& board) {
+        fn(board,0,0);
+        
+    }
+};
