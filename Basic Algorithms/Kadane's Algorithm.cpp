@@ -1,29 +1,34 @@
 #include <bits/stdc++.h>
-#define int long long
-#define INF 1000000000000000000
-#define MOD 1000000009;
-#define mid(l, u) ((l+u)/2)
-#define rchild(i) (i*2 + 2)
-#define lchild(i) (i*2 + 1)
 using namespace std;
 
-signed main(){
+void kadane(int size,int arr)
+{
+    int max_so_far      = INT_MIN;
+    int max_ending_here = 0;
+    int max_element     = INT_MIN;
+
+    for (int i = 0; i < size; i++)
+    {
+        max_ending_here = max(max_ending_here + arr[i], 0);
+        max_so_far      = max(max_ending_here, max_so_far);
+        max_element     = max(max_element, arr[i]);
+    }
+
+    if (max_so_far == 0)
+      max_so_far = max_element;
+
+    cout << max_so_far;
+}
+
+int main()
+{
     int n;
     cin>>n;
     int a[n];
-    for(int i =0 ;i<n;i++) cin>>a[i];
-    int dp[n];
-    dp[0] = a[0];
-    int ans = a[0];
-    for(int i =1;i<n;i++) ans = max(ans, (dp[i] = a[i] + max(dp[i-1], (int)0)));
-    cout<<ans<<endl;
-} 
-
-/*
-Sample Input:
-8
--2 -3 4 -1 -2 1 5 -3
-
-Sample Output:
-7
-*/
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    kadane(n , a);
+    return 0;
+}
