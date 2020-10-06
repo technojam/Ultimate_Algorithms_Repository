@@ -1,5 +1,8 @@
 # Basic Algorithms for Beginners
 ### Sorting Algorithm
+- Bubble sort 
+- Insertion sort 
+- selection sort 
 - Kahn's Algorithm
 - Counting sort
 
