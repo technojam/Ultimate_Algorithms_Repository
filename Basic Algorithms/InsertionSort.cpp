@@ -13,7 +13,7 @@ void main()
 	{
 		cin>>arr[i];
 	}
-	cout<<"Sorting array using selection sort ... \n";
+	cout<<"Sorting array using Insertion sort ... \n";
 	for(i=1; i<size; i++)
 	{
 		temp=arr[i];
