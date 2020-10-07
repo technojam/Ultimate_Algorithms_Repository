@@ -16,5 +16,4 @@ int main()
         cout << str1 << " is not a palindrome";
     else
         cout << str1 << " is a palindrome";
-    return 0;
 }
