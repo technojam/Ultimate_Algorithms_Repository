@@ -27,7 +27,9 @@ public:
     bool *vis=new bool[V]{0};
     int ans=0;
     //begin start from src node and push src node
-    Q.push({0,0});
+
+    Q.push({0,0});//wt,node
+
 
     while(!Q.empty()){
     	//pick out the edge with min weight
@@ -68,4 +70,6 @@ int main(){
 	}
 	cout<<g.prim_mst()<<endl;
 	return 0;
+
 }
+
