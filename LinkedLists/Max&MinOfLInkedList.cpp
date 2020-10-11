@@ -15,10 +15,10 @@ int maximum(Node *head)
 {
     
     int max=0;
-    struct Node *curr=head;
-    while(curr!=NULL){
+    struct Node *curr=head;  // storing the address of head in a pointer curr
+    while(curr!=NULL){    // traversing the linked list with curr    
         if((curr->data)>=max){
-            max=curr->data;
+            max=curr->data; //updating max variable
         }
         curr=curr->next;
     }
@@ -29,10 +29,10 @@ int minimum(Node *head)
 {
     
     int min=100000;
-    struct Node *curr=head;
-    while(curr!=NULL){
+    struct Node *curr=head;  // storing the address of head in a pointer curr
+    while(curr!=NULL){ // traversing the linked list with curr    
         if((curr->data)<=min){
-            min=curr->data;
+            min=curr->data; // updating the variable min
         }
         curr= curr->next;
     }
@@ -47,7 +47,7 @@ int main()
     struct Node *head= new Node(data);
     struct Node *tail= head;
     for(int i=0;i<n-1;i++){
-        cin>>data;
+        cin>>data;   // taking input from user of values of linked list elements
         tail->next=new Node(data);
         tail=tail->next;
     }
