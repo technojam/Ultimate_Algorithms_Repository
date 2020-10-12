@@ -8,18 +8,18 @@ struct node
     struct node *next;
 };
 struct node *start = NULL;
-void create_ll(int*);
-void display(int*);
-void insert_beg(int*);
-void insert_end(int*);
-void insert_before(int*);
-void insert_after(int*);
-void delete_beg(int*);
-void delete_end(int*);
-void delete_node(int*);
-void delete_after(int*);
-void delete_list(int*);
-void sort_list(int*);
+void create_ll(int*);                                    //FUNC to insert the elements in a Linked list
+void display(int*);                                      //FUNC to display Linked list
+void insert_beg(int*);                                   //FUNC to insert a node at the beginning
+void insert_end(int*);                                   //FUNC to insert a node at the end of the Linked list
+void insert_before(int*);                                //FUNC to insert a new node before the specified node
+void insert_after(int*);                                 //FUNC to insert a new node after the specified node
+void delete_beg(int*);                                   //FUNC to delete a node at the beginning
+void delete_end(int*);                                   //FUNC to delete a node at the end of the Linked list
+void delete_node(int*);                                  //FUNC to delete the specified node
+void delete_after(int*);                                 //FUNC to delete a node after the specified node
+void delete_list(int*);                                  //FUNC to delete the whole list
+void sort_list(int*);                                    //FUNC to sort the node
 void create_ll(struct node *start)
 {
     struct node *new_node,*temp;
@@ -29,7 +29,7 @@ void create_ll(struct node *start)
     scanf("%d",&num);
     while(num!=-1)
     {
-        new_node = (struct node*)malloc(sizeof(struct node));
+        new_node = (struct node*)malloc(sizeof(struct node));              //defines the size of each node
         new_node -> data = num;
         if(start==NULL)
         {
@@ -54,7 +54,7 @@ void display(struct node *start)
     struct node *temp;
     temp = start;
     printf("\n Linked List data :-\n ");
-    if(start==NULL)
+    if(start==NULL)                                         //If the first element is NULL,the list is empty
         printf(" Linked List is empty");
     else
     {
@@ -90,7 +90,7 @@ void insert_end(struct node *start)
     new_node->data = num;
     new_node->next = NULL;
     temp = start;
-    while(temp->next != NULL)
+    while(temp->next != NULL)                           //the loop will continue till it reches the end,that is where the Linked list is NULL
         temp = temp->next;
     temp->next = new_node;
     printf(" %d is inserted at the end of the list",new_node->data);
@@ -108,7 +108,7 @@ void insert_before(struct node *start)
     new_node = (struct node*)malloc(sizeof(struct node));
     new_node->data = num;
     temp = start;
-    while(temp->data != val)
+    while(temp->data != val)                              //The loop continues till the specified node is reached
     {
         preptr = temp;
         temp = temp->next;
@@ -130,7 +130,7 @@ void insert_after(struct node *start)
     new_node = (struct node*)malloc(sizeof(struct node));
     new_node->data = num;
     temp = start;
-    while(preptr->data != val)
+    while(preptr->data != val)                            //The loop continues till the specified node is reached
     {
         preptr = temp;
         temp = temp->next;
@@ -145,7 +145,7 @@ void delete_beg(struct node *start)
 {
     struct node *temp;
 
-    if(start == NULL)
+    if(start == NULL)                                   //If the first element of the list is NULL,the list is empty
         printf(" Linked List is empty");
     else
     {
@@ -172,7 +172,7 @@ void delete_end(struct node *start)
         }
         else
         {
-            while(temp->next != NULL)
+            while(temp->next != NULL)                                    //The loop will stop as soon as the end is reached
             {
                 preptr = temp;
                 temp = temp->next;
@@ -203,7 +203,7 @@ void delete_node(struct node *start)
         }
         else
         {
-            while(temp->data != val)
+            while(temp->data != val)                            //The loop will stop as soon as the specified node is reached
             {
                 preptr = temp;
                 temp = temp->next;
@@ -260,8 +260,9 @@ void delete_list(struct node *start)
             while(temp != NULL)
             {
                 printf("\n %d is to be deleted next",temp->data);
-                start = delete_beg(temp);
-                temp = start;
+                start = delete_beg(temp);                 /*here we are calling a function which deletes elements from the beginning
+                                                          so that elements can be deletd from the start and keep on deleting till the end is reached*/
+              temp = start;                                   
             }
         }
     }
@@ -281,7 +282,7 @@ void sort_list(struct node *start)
             ptr2 = ptr1->next;
             while(ptr2 != NULL)
             {
-                if(ptr1->data > ptr2->data)
+                if(ptr1->data > ptr2->data)                            //sorting through comparison of data
                 {
                     temp = ptr1->data;
                     ptr1->data = ptr2->data;
@@ -294,7 +295,7 @@ void sort_list(struct node *start)
         printf("\n List sorted");
     }
 }
-void main()
+void main()                                                   //Main Function
 {
    int option;
    printf("\n\n *****MAIN MENU******");
