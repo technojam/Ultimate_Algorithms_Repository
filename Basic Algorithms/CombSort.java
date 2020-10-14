@@ -1,3 +1,9 @@
+/*
+//combSort() function implements the sorting algorithm, which takes array of integers(typed in numbers) as parameter value.
+//Comb Sort is an improvement of classic bubble sort. Items are sorted in a specific gap. After completing each phase, the gap is decreased.
+//The decreasing factor or the shrink factor for this sort is 1.3. It means that after completing each phase the gap is divided by 1.3.
+*/
+
 import java.util.Scanner;
 
 public class CombSort {
