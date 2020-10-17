@@ -1,0 +1,14 @@
+bool hasCycle(ListNode *head) {
+        ListNode *slow=head,*fast=head;
+        
+        while(slow!=NULL && fast!=NULL && fast->next!=NULL) {
+            
+            slow = slow->next;               //Slow moves by 1 step
+            fast = fast->next->next;        //Fast moves by two steps
+            
+            if(slow==fast) //If they meet then there is a loop
+                return true;
+        }
+        
+        return false; //No loop
+    }
