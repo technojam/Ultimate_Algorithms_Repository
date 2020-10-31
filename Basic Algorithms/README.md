@@ -5,6 +5,7 @@
 - selection sort 
 - Kahn's Algorithm
 - Counting sort
+- Merge Sort
 
 ### Dynamic Programming
 - Kadane's Algorithm
